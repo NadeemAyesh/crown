@@ -571,3 +571,249 @@ i.bi {
 
 
 /* banner-big-wrap */
+
+/* sale-item */
+.sale-item {
+    padding: 24px;
+    background-color: rgba(197 165 77 / 20%);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+}
+
+.sale-item figure {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.sale-item figure span.sale-percent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4px 16px 5px;    
+    background: #F2BC1B;
+    border-radius: 4px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.sale-item h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;    
+    color: #1A1E26;
+}
+/* sale-item */
+
+/* features */
+.features {
+    padding: 50px 0;
+    background: #F2F6F4;
+}
+
+.feat-item figure {
+    width: 100px;
+    height: 100px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    text-align: center;
+    padding: 15px;
+}
+
+.feat-item h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #1A1E26;
+    margin-bottom: 16px;
+}
+
+.feat-item p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #717378;
+}
+/* features */
+
+/* big-offer */
+.big-offer {
+    padding: 100px 50px;
+    background: url(../images/big-offer-bg.png) no-repeat center / cover;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.big-offer h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 110%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.big-offer p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.big-offer p span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    color: #F2BC1B;
+}
+/* big-offer */
+
+/* main-footer */
+.main-footer { 
+    padding: 40px 0 25px 0;
+    background: linear-gradient(180deg, #26241A 0%, #01100B 100%);
+}
+
+.main-footer .footer-brand {
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.main-footer .footer-brand img {
+    height: 60px;
+    max-width: 100%;
+}
+
+.main-footer p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #9D9EA2;
+}
+
+.main-footer h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.footer-list li a {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #9D9EA2;
+    margin-bottom: 12px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.footer-list li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.footer-list li a:hover {
+    color: #FFF;
+
+}
+
+.footer-list li a:hover::after {
+    width: 35px;
+}
+
+.pay-methods li {
+    width: 56px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.pay-methods li:not(:last-child) {
+    margin-right: 12px;
+}
+
+.pay-methods li img {
+    height: 18px;
+    max-width: 100%;
+}
+
+.footer-list.nav li:not(:last-child) {
+    margin-inline-end: 12px;
+}
+/* main-footer */
+
+/* mini-cart-table */
+.mini-cart-table figure {
+    width: 56px;
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px solid #F4F4F4;
+    border-radius: 6px;
+}
+
+.mini-cart-table h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--main-color);
+}
+
+.mini-cart-table p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #9D9EA2;
+    margin-bottom: 0;
+}
+
+.mini-cart-table strong.total-mini {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #060709;
+    display: block;
+}
+
+.total-price strong {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #060709;
+}
+
+.total-price span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #EB2606;
+}
+/* mini-cart-table */
