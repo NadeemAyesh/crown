@@ -81,7 +81,7 @@ $(document).ready(function () {
         from: function (formattedValue) {
             return Number(formattedValue);
         },
-        to: function(numericValue) {
+        to: function (numericValue) {
             return Math.round(numericValue);
         }
     };
@@ -99,7 +99,7 @@ $(document).ready(function () {
             format: formatForSlider,
             tooltips: {
                 // tooltips are output only, so only a "to" is needed
-                to: function(numericValue) {
+                to: function (numericValue) {
                     return numericValue.toFixed(1);
                 }
             }
@@ -119,16 +119,57 @@ $(document).ready(function () {
         });
     }
 
-    $('.show-grid').on('click', function(e) {
+    $('.show-grid').on('click', function (e) {
         e.preventDefault();
         $('.hide-archive').hide();
         $('.grid-items').fadeIn();
     })
 
-    $('.show-list').on('click', function(e) {
+    $('.show-list').on('click', function (e) {
         e.preventDefault();
         $('.hide-archive').hide();
         $('.list-items').fadeIn();
     })
+
+    $('.btn-hideshow-password').on('click', function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        if ($this.hasClass('showed')) {
+            $this.removeClass('showed');
+            $this.parent().find('input').attr('type', 'text');
+            $this.find('i').addClass('bi-eye');
+            $this.find('i').removeClass('bi-eye-slash');
+        } else {
+            $this.addClass('showed');
+            $this.parent().find('input').attr('type', 'password');
+            $this.find('i').addClass('bi-eye-slash');
+            $this.find('i').removeClass('bi-eye');
+        }
+    })
+
+    if ($('.swiper-product').length != 0) {
+        const swiper_thumbnail = new Swiper(".swiper_thumbnail", {
+            slidesPerView: 6,
+            spaceBetween: 12,
+        })
+
+        const swiper = new Swiper('.swiper-product', {
+            loop: false,
+            autoplay: {
+                delay: 5000,
+            },
+            navigation: {
+                nextEl: ".swiper-product .swiper-button-next",
+                prevEl: ".swiper-product .swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper_thumbnail,
+            },
+        })
+    }
+
+    if ($('.js-example-basic-single').length != 0) {
+        $('.js-example-basic-single').select2();
+    }
 
 });

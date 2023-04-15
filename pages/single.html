@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="../" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="#000000" name="theme-color" />
+
+    <!-- Required meta tags -->
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <meta content="" name="keywords" />
+    <meta content="" name="copyright" />
+
+    <!-- Scripts Preloaded -->
+    <link href="assets/vendor/popper.min.js" rel="preload" as="script" />
+    <link href="assets/vendor/jquery-3.6.4.min.js" rel="preload" as="script" />
+    <link href="assets/libs/lozad.js-master/dist/lozad.min.js" rel="preload" as="script" />
+    <link href="https://unpkg.com/swiper@8/swiper-bundle.min.js" rel="preload" as="script" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" rel="preload" as="script" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" rel="preload" as="script" />
+    <link href="assets/js/script.js" rel="preload" as="script" />
+
+    <!-- Styles Preloaded -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="preload" as="style" />
+    <link href="https://unpkg.com/swiper@8/swiper-bundle.min.css" rel="preload" as="style" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="preload" as="style" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" rel="preload" as="style" />
+    <link href="assets/css/style.css" rel="preload" as="style" />
+
+    <!-- Main Styles Preloaded -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/libs/nouislider/nouislider.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!--load all styles -->
+
+    <title>Crown Jewls</title>
+</head>
+
+<body>
+
+    <aside class="offcanvas offcanvas-end" tabindex="-1" id="miniCart" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header shadow-sm">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart <small>(2)</small></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <table class="table mini-cart-table">
+                <tr>
+                    <td style="width: 64px;">
+                        <figure class="mb-0">
+                            <img data-src="assets/images/men-black-white-adidas-shoes-1000x1000.webp" alt="" title=""
+                                class="cover-image lozad" />
+                        </figure>
+                    </td>
+                    <td>
+                        <h3>Mix And (4 X 7G)</h3>
+                        <p>12$ <span>X2</span></p>
+                    </td>
+                    <td class="text-end">
+                        <a href="javascript: void(0);" class="btn btn-sm">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                                    stroke="#F4F4F4" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9.16992 14.8299L14.8299 9.16992" stroke="#9D9EA2" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.8299 14.8299L9.16992 9.16992" stroke="#9D9EA2" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <strong class="total-mini">200.25$</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 64px;">
+                        <figure class="mb-0">
+                            <img data-src="assets/images/men-black-white-adidas-shoes-1000x1000.webp" alt="" title=""
+                                class="cover-image lozad" />
+                        </figure>
+                    </td>
+                    <td>
+                        <h3>Mix And (4 X 7G)</h3>
+                        <p>12$ <span>X2</span></p>
+                    </td>
+                    <td class="text-end">
+                        <a href="javascript: void(0);" class="btn btn-sm">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                                    stroke="#F4F4F4" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9.16992 14.8299L14.8299 9.16992" stroke="#9D9EA2" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.8299 14.8299L9.16992 9.16992" stroke="#9D9EA2" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <strong class="total-mini">200.25$</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 64px;">
+                        <figure class="mb-0">
+                            <img data-src="assets/images/men-black-white-adidas-shoes-1000x1000.webp" alt="" title=""
+                                class="cover-image lozad" />
+                        </figure>
+                    </td>
+                    <td>
+                        <h3>Mix And (4 X 7G)</h3>
+                        <p>12$ <span>X2</span></p>
+                    </td>
+                    <td class="text-end">
+                        <a href="javascript: void(0);" class="btn btn-sm">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                                    stroke="#F4F4F4" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9.16992 14.8299L14.8299 9.16992" stroke="#9D9EA2" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.8299 14.8299L9.16992 9.16992" stroke="#9D9EA2" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <strong class="total-mini">200.25$</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 64px;">
+                        <figure class="mb-0">
+                            <img data-src="assets/images/men-black-white-adidas-shoes-1000x1000.webp" alt="" title=""
+                                class="cover-image lozad" />
+                        </figure>
+                    </td>
+                    <td>
+                        <h3>Mix And (4 X 7G)</h3>
+                        <p>12$ <span>X2</span></p>
+                    </td>
+                    <td class="text-end">
+                        <a href="javascript: void(0);" class="btn btn-sm">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
+                                    stroke="#F4F4F4" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9.16992 14.8299L14.8299 9.16992" stroke="#9D9EA2" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.8299 14.8299L9.16992 9.16992" stroke="#9D9EA2" stroke-width="1.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <strong class="total-mini">200.25$</strong>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="d-flex total-price justify-content-between">
+                <strong>Total: </strong>
+                <span class="ms-auto">250 $</span>
+            </div>
+            <hr>
+
+            <a href="" class="btn btn-crown">Continue Chechout</a>
+        </div>
+    </aside>
+
+    <!-- main header -->
+    <header class="main-header box-shadow mb-5">
+        <section class="top-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <nav class="top-nav nav">
+                            <p class="mb-0"><i class="bi bi-check2-circle"></i> Score of 8.6 based on <a href="">942
+                                    reviews</a>.</p>
+                            <p class="mb-0"><i class="bi bi-check2-circle"></i> Ordered before 15:00, shipped the same
+                                day</p>
+                        </nav>
+                    </div>
+                    <div class="col-lg-4">
+                        <nav class="top-nav nav social-nav align-items-center justify-content-end">
+                            <a href="" class="nav-link"><i class="bi bi-facebook"></i></a>
+                            <a href="" class="nav-link"><i class="bi bi-whatsapp"></i></a>
+                            <a href="" class="nav-link"><i class="bi bi-twitter"></i></a>
+                            <a href="" class="nav-link"><i class="bi bi-instagram"></i></a>
+                            <p class="mb-0 mx-2"> | </p>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-globe"></i> English
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="navbar navbar-expand-lg py-4">
+            <div class="container">
+                <a class="navbar-brand" href="#" title="">
+                    <img src="assets/images/logo.png" alt="" title="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex mx-auto search-header" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="btn btn-outlined" href="#">Register</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="btn btn-crown" href="#">Login</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <button class="nav-link position-relative" data-bs-target="#miniCart"
+                                data-bs-toggle="offcanvas"><i class="bi bi-cart3" style="font-size: 26px;"></i>
+                                <span class="notification-number">
+                                    35
+                                </span>
+                            </button>
+                        </li>
+                        <li class="nav-item dropdown no-arrow ms-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <figure class="user-sm-img">
+                                    <img src="assets/images/user.jpg" alt="" title="" class="cover-image" />
+                                </figure>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr class="mt-0" style="border-top: 1px solid #F4F4F4;">
+        <div class="container">
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- main header -->
+
+    <!-- main content -->
+    <main class="main-content">
+        <!-- page section -->
+        <section class="page single-page">
+            <div class="container">
+                <div class="alert alert-primary fade show alert-dismissible" role="alert">
+                    <strong><i class="fa fa-info-circle" aria-hidden="true"></i></strong> Use this alert box when you
+                    need to highlight the <b>primary</b> message!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-secondary fade show alert-dismissible" role="alert">
+                    <strong><i class="fa fa-info-circle" aria-hidden="true"></i></strong> Use this alert box when you
+                    need to highlight the <b>secondary</b> message!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-success fade show alert-dismissible" role="alert">
+                    <strong><i class="fa fa-check-circle" aria-hidden="true"></i></strong> Use this alert box when you
+                    need to highlight the <b>success</b> message!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-danger fade show alert-dismissible" role="alert">
+                    <strong><i class="fa fa-warning" aria-hidden="true"></i></strong> Use this alert box when you need
+                    to highlight the <b>danger</b> message!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-warning fade show alert-dismissible" role="alert">
+                    <strong><i class="fa fa-warning" aria-hidden="true"></i></strong> Use this alert box when you need
+                    to highlight the <b>warning</b> message!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-info fade show alert-dismissible" role="alert">
+                    <strong><i class="fa fa-info-circle" aria-hidden="true"></i></strong> Use this alert box when you
+                    need to highlight the <b>info</b> message!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-light fade show alert-dismissible" role="alert">
+                    <strong><i class="fa fa-lightbulb-o" aria-hidden="true"></i></strong> Use this alert box when you
+                    need to highlight the <b>light</b> message!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-dark fade show alert-dismissible" role="alert">
+                    <strong><i class="fa fa-question-circle" aria-hidden="true"></i></strong> Use this alert box when
+                    you need to highlight the <b>dark</b> message!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="swiper swiper-product">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="assets/images/Makeup-Kit-Products-Free-PNG-Image.png" data-fancybox="group">
+                                        <figure class="product-image-single">
+                                            <img src="assets/images/Makeup-Kit-Products-Free-PNG-Image.png" alt=""
+                                                class="contain-image " />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="assets/images/Makeup-Kit-Products-Free-PNG-Image.png" data-fancybox="group">
+                                        <figure class="product-image-single">
+                                            <img src="assets/images/Makeup-Kit-Products-Free-PNG-Image.png" alt=""
+                                                class="contain-image " />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="assets/images/Makeup-Kit-Products-Free-PNG-Image.png" data-fancybox="group">
+                                        <figure class="product-image-single">
+                                            <img src="assets/images/Makeup-Kit-Products-Free-PNG-Image.png" alt=""
+                                                class="contain-image " />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="assets/images/Makeup-Kit-Products-Free-PNG-Image.png" data-fancybox="group">
+                                        <figure class="product-image-single">
+                                            <img src="assets/images/Makeup-Kit-Products-Free-PNG-Image.png" alt=""
+                                                class="contain-image " />
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="assets/images/Makeup-Kit-Products-Free-PNG-Image.png" data-fancybox="group">
+                                        <figure class="product-image-single">
+                                            <img src="assets/images/Makeup-Kit-Products-Free-PNG-Image.png" alt=""
+                                                class="contain-image " />
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"><i class="bi bi-chevron-right"></i></div>
+                            <div class="swiper-button-prev"><i class="bi bi-chevron-left"></i></div>
+                        </div>
+
+                        <div class="swiper swiper_thumbnail">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <figure class="product-sm-image-single">
+                                        <img src="assets/images/Makeup-Kit-Products-Free-PNG-Image.png" alt=""
+                                            class="contain-image" />
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="product-sm-image-single">
+                                        <img src="assets/images/Makeup-Kit-Products-Free-PNG-Image.png" alt=""
+                                            class="contain-image" />
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="product-sm-image-single">
+                                        <img src="assets/images/Makeup-Kit-Products-Free-PNG-Image.png" alt=""
+                                            class="contain-image" />
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="product-sm-image-single">
+                                        <img src="assets/images/Makeup-Kit-Products-Free-PNG-Image.png" alt=""
+                                            class="contain-image" />
+                                    </figure>
+                                </div>
+                                <div class="swiper-slide">
+                                    <figure class="product-sm-image-single">
+                                        <img src="assets/images/Makeup-Kit-Products-Free-PNG-Image.png" alt=""
+                                            class="contain-image" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="cat">CONCENTRATES</span>
+                        <h1 class="single-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+                        <div class="d-flex align-items-center mb-4">
+                            <p class="price mb-0">$80.00 <strike>$155</strike></p>
+                            <div class="ms-auto d-flex rate-result">
+                                <span><i class="bi bi-star-fill"></i> 4.6/5</span>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>Jungle Diamonds is a slightly indica dominant hybrid strain (60% indica/40% sativa)
+                                created through crossing the infamous Slurricane X Gorilla Glue #4 strains.</p>
+                        </div>
+
+                        <div class="options-box mb-5">
+                            <span class="sub-title">Quantity:</span>
+                            <div class="d-flex quantity-box align-items-center">
+                                <div class="d-inline-flex">
+                                    <button type="button" class="btn">
+                                        <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1H9" stroke="#060709" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <input type="number" class="form-control" value="0" />
+                                    <button type="button" class="btn">
+                                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5H9" stroke="#060709" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M5 9V1" stroke="#060709" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="ms-auto">
+                                    SKU: 15
+                                </div>
+                            </div>
+                            <hr>
+                            <span class="sub-title">Color:</span>
+                            <div class="form-group mb-3">
+                                <select name="" class="form-select js-example-basic-single">
+                                    <option value="">#66</option>
+                                    <option value="">#54</option>
+                                    <option value="">#42t4</option>
+                                    <option value="">#455456</option>
+                                    <option value="">#sd32</option>
+                                    <option value="">#65</option>
+                                    <option value="">#455456</option>
+                                    <option value="">#45565456</option>
+                                    <option value="">#45560016</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group mb-3 my-radio ">
+                                <label>
+                                    <input type="radio" name="test" value="small" checked="">
+                                    <img src="http://placehold.it/40x60/0bf/fff&amp;text=A">
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="test" value="big">
+                                    <img src="http://placehold.it/40x60/b0f/fff&amp;text=B">
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="test" value="sm">
+                                    <img src="http://placehold.it/40x60/b0f/fff&amp;text=B">
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="test" value="bl">
+                                    <img src="http://placehold.it/40x60/b0f/fff&amp;text=B">
+                                </label>
+                            </div>
+
+                            <table class="table table-bordered table-mini-info">
+                                <tr>
+                                    <td><strong>Khalifa Kush (AAAA)</strong> (2x)</td>
+                                    <td><strong>$120.00</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Khalifa Kush (AAAA)</strong> (2x)</td>
+                                    <td><strong>$120.00</strong></td>
+                                </tr>
+                                <tr class="bg-light">
+                                    <td><strong>Total: </strong></td>
+                                    <td><strong>$120.00</strong></td>
+                                </tr>
+                            </table>
+
+                            <a href="" class="btn btn-crown"><i class="bi bi-cart3"></i> Add to Cart | 12.0 $</a>
+
+                            <hr>
+
+                            <ul class="list-unstyled p-0">
+                                <li class="mb-2">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.00016 15.1663C11.6668 15.1663 14.6668 12.1663 14.6668 8.49967C14.6668 4.83301 11.6668 1.83301 8.00016 1.83301C4.3335 1.83301 1.3335 4.83301 1.3335 8.49967C1.3335 12.1663 4.3335 15.1663 8.00016 15.1663Z"
+                                            stroke="#17AF26" stroke-width="1.2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M5.1665 8.49995L7.05317 10.3866L10.8332 6.61328" stroke="#17AF26"
+                                            stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Free Xpress Shipping on orders over $149
+                                </li>
+                                <li class="mb-2">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.00016 15.1663C11.6668 15.1663 14.6668 12.1663 14.6668 8.49967C14.6668 4.83301 11.6668 1.83301 8.00016 1.83301C4.3335 1.83301 1.3335 4.83301 1.3335 8.49967C1.3335 12.1663 4.3335 15.1663 8.00016 15.1663Z"
+                                            stroke="#17AF26" stroke-width="1.2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M5.1665 8.49995L7.05317 10.3866L10.8332 6.61328" stroke="#17AF26"
+                                            stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Free Xpress Shipping on orders over $149
+                                </li>
+                                <li class="mb-2">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.00016 15.1663C11.6668 15.1663 14.6668 12.1663 14.6668 8.49967C14.6668 4.83301 11.6668 1.83301 8.00016 1.83301C4.3335 1.83301 1.3335 4.83301 1.3335 8.49967C1.3335 12.1663 4.3335 15.1663 8.00016 15.1663Z"
+                                            stroke="#17AF26" stroke-width="1.2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M5.1665 8.49995L7.05317 10.3866L10.8332 6.61328" stroke="#17AF26"
+                                            stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Free Xpress Shipping on orders over $149
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <header class="sec-title mb-3">
+                    <div class="title-actions description-tabs">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                    aria-selected="true">Full Description</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                    aria-controls="pills-profile" aria-selected="false">Reviews</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-contact" type="button" role="tab"
+                                    aria-controls="pills-contact" aria-selected="false">Contact</button>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="info-box">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut amet reprehenderit ad optio
+                                ullam minima pariatur corporis. Quod commodi ex, tenetur adipisci consequuntur ratione
+                                neque ipsum recusandae accusantium cumque voluptas!</p>
+                            <p>Jungle Diamonds is a slightly indica dominant hybrid strain (60% indica/40% sativa)
+                                created through crossing the infamous Slurricane X Gorilla Glue #4 strains. Named for
+                                its gorgeous appearance and breeder, Jungle Diamonds is a favorite of indica and hybrid
+                                lovers alike thanks to its delicious taste and tingly, arousing high. Jungle Diamonds
+                                buds have sparkling oversized spade-shaped olive green nugs with vivid amber hairs and a
+                                thick frosty blanket of glittering tiny blue-tinted white crystal trichomes. As you pull
+                                apart each sticky little nugget, aromas of spicy mocha coffee and fruity herbs are
+                                released. </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                        tabindex="0">
+                        <div class="comments-container">
+                            <ul id="comments-list" class="comments-list">
+                                <li>
+                                    <div class="comment-main-level">
+
+                                        <div class="comment-avatar"><img
+                                                src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg"
+                                                alt=""></div>
+
+                                        <div class="comment-box">
+                                            <div class="comment-head">
+                                                <h6 class="comment-name by-author"><a
+                                                        href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
+                                                <span>hace 20 minutos</span>
+                                                <i class="fa fa-reply"></i>
+                                                <i class="fa fa-heart"></i>
+                                            </div>
+                                            <div class="comment-content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis
+                                                animi et iure laudantium vitae, praesentium optio, sapiente distinctio
+                                                illo?
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <ul class="comments-list reply-list">
+                                        <li>
+
+                                            <div class="comment-avatar"><img
+                                                    src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg"
+                                                    alt=""></div>
+
+                                            <div class="comment-box">
+                                                <div class="comment-head">
+                                                    <h6 class="comment-name"><a href="http://creaticode.com/blog">Lorena
+                                                            Rojero</a></h6>
+                                                    <span>hace 10 minutos</span>
+                                                    <i class="fa fa-reply"></i>
+                                                    <i class="fa fa-heart"></i>
+                                                </div>
+                                                <div class="comment-content">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+                                                    omnis animi et iure laudantium vitae, praesentium optio, sapiente
+                                                    distinctio illo?
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+
+                                            <div class="comment-avatar"><img
+                                                    src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg"
+                                                    alt=""></div>
+                                            <div class="comment-box">
+                                                <div class="comment-head">
+                                                    <h6 class="comment-name by-author"><a
+                                                            href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
+                                                    <span>hace 10 minutos</span>
+                                                    <i class="fa fa-reply"></i>
+                                                    <i class="fa fa-heart"></i>
+                                                </div>
+                                                <div class="comment-content">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+                                                    omnis animi et iure laudantium vitae, praesentium optio, sapiente
+                                                    distinctio illo?
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <div class="comment-main-level">
+
+                                        <div class="comment-avatar"><img
+                                                src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg"
+                                                alt=""></div>
+                                        <!-- Contenedor del Comentario -->
+                                        <div class="comment-box">
+                                            <div class="comment-head">
+                                                <h6 class="comment-name"><a href="http://creaticode.com/blog">Lorena
+                                                        Rojero</a></h6>
+                                                <span>hace 10 minutos</span>
+                                                <i class="fa fa-reply"></i>
+                                                <i class="fa fa-heart"></i>
+                                            </div>
+                                            <div class="comment-content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis
+                                                animi et iure laudantium vitae, praesentium optio, sapiente distinctio
+                                                illo?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <form class="form">
+                            <div class="form-group mb-3">
+                                <label class="d-block">Rate</label>
+                                <fieldset class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                    <input type="radio" id="star4" name="rating" value="4"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                    <input type="radio" id="star3" name="rating" value="3"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                    <input type="radio" id="star2" name="rating" value="2"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                    <input type="radio" id="star1" name="rating" value="1"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                </fieldset>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label>Your Review *</label>
+                                <textarea class="form-control" name="" placeholder="Enter your review" rows="6"></textarea>
+                            </div>
+
+                            <button type="submit" name="" class="btn btn-crown">Submit</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- page section -->
+
+        <!-- product list -->
+        <section class="products mb-5">
+            <div class="container">
+                <header class="sec-title mb-3">
+                    <div class="d-flex justify-content-between">
+                        <h4>More Products Like this one</h4>
+                        <div class="title-actions">
+                            <a href="" class="btn btn-outline-secondary">Show all</a>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <article class="product-item">
+                            <figure>
+                                <img data-src="assets/images/men-black-white-adidas-shoes-1000x1000.webp" alt=""
+                                    title="" class="cover-image lozad" />
+                            </figure>
+
+                            <div class="product-body">
+                                <span class="pro-cat">Sativa 100%</span>
+                                <h3>Lorem ipsum dolor sit amet consectetur </h3>
+                                <div class="review">
+                                    <p><i class="bi bi-star-fill"></i> <strong>4.6/5</strong> | <strong>135</strong>
+                                        Reviews</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <p class="price mb-0">$80.00 <strike>$155</strike></p>
+                                    <a href="" class="btn btn-crown ms-auto"><i class="bi bi-cart3"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4">
+                        <article class="product-item">
+                            <figure>
+                                <span class="new">New</span>
+                                <img data-src="assets/images/men-black-white-adidas-shoes-1000x1000.webp" alt=""
+                                    title="" class="cover-image lozad" />
+                            </figure>
+
+                            <div class="product-body">
+                                <span class="pro-cat">Sativa 100%</span>
+                                <h3>Lorem ipsum dolor sit amet consectetur </h3>
+                                <div class="review">
+                                    <p><i class="bi bi-star-fill"></i> <strong>4.6/5</strong> | <strong>135</strong>
+                                        Reviews</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <p class="price mb-0">$80.00 <strike>$155</strike></p>
+                                    <a href="" class="btn btn-crown ms-auto"><i class="bi bi-cart3"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4">
+                        <article class="product-item">
+                            <figure>
+                                <span class="out-of-stock">Out Of Stock</span>
+                                <img data-src="assets/images/men-black-white-adidas-shoes-1000x1000.webp" alt=""
+                                    title="" class="cover-image lozad" />
+                            </figure>
+
+                            <div class="product-body">
+                                <span class="pro-cat">Sativa 100%</span>
+                                <h3>Lorem ipsum dolor sit amet consectetur </h3>
+                                <div class="review">
+                                    <p><i class="bi bi-star-fill"></i> <strong>4.6/5</strong> | <strong>135</strong>
+                                        Reviews</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <p class="price mb-0">$80.00 <strike>$155</strike></p>
+                                    <a href="" class="btn btn-crown ms-auto"><i class="bi bi-cart3"></i> Add to Cart</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product list -->
+    </main>
+    <!-- main content -->
+
+    <!-- main footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 me-auto">
+                    <div class="footer-item">
+                        <a href="" class="footer-brand">
+                            <img src="assets/images/logo.png" alt="" />
+                        </a>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, accusamus. Vero commodi amet
+                            aspernatur corporis ducimus modi, consectetur asperiores dolorem maxime earum in quibusdam
+                            adipisci. Ipsa et tenetur vitae earum.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4>Footer List</h4>
+                    <ul class="p-0 m-0 list-unstyled footer-list">
+                        <li><a href="">Track Your Order</a></li>
+                        <li><a href="">Shop All</a></li>
+                        <li><a href="">Flower</a></li>
+                        <li><a href="">Edibles</a></li>
+                        <li><a href="">Concentrates</a></li>
+                        <li><a href="">Refunds</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4>Footer List</h4>
+                    <ul class="p-0 m-0 list-unstyled footer-list">
+                        <li><a href="">Track Your Order</a></li>
+                        <li><a href="">Shop All</a></li>
+                        <li><a href="">Flower</a></li>
+                        <li><a href="">Edibles</a></li>
+                        <li><a href="">Concentrates</a></li>
+                        <li><a href="">Refunds</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 ms-auto">
+                    <h4>CONTACT US</h4>
+
+                    <ul class="p-0 m-0 list-unstyled footer-list">
+                        <li><a href="mailto: info@topshelfbc.cc"><i class="bi bi-envelope"></i> info@topshelfbc.cc</a>
+                        </li>
+                        <li><a href="tel: +972598195345"><i class="bi bi-telephone"></i> +972598195345</a></li>
+                    </ul>
+                    <hr style="border-color: #686868;">
+                    <ul class="nav pay-methods">
+                        <li>
+                            <img src="assets/images/icons/1.svg" alt="" />
+                        </li>
+                        <li>
+                            <img src="assets/images/icons/2.svg" alt="" />
+                        </li>
+                        <li>
+                            <img src="assets/images/icons/3.svg" alt="" />
+                        </li>
+                        <li>
+                            <img src="assets/images/icons/4.svg" alt="" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr style="border-color: #686868;">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="mb-0">© 2022 Top Shelf BC. All Rights Reserved. </p>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="p-0 m-0 list-unstyled footer-list nav justify-content-end">
+                        <li><a href="" class="mb-0">Track Your Order</a></li>
+                        <li><a href="" class="mb-0">Shop All</a></li>
+                        <li><a href="" class="mb-0">Flower</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- main footer -->
+
+
+    <!-- Bootstrap Bundle and Javascript with Popper -->
+    <script defer src="assets/vendor/popper.min.js"></script>
+    <script defer src="assets/vendor/jquery-3.6.4.min.js"></script>
+    <script defer src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script defer src="assets/libs/lozad.js-master/dist/lozad.min.js"></script>
+    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script defer src="assets/libs/nouislider/nouislider.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script defer src="assets/js/script.js"></script>
+</body>
+
+</html>
