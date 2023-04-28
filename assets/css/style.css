@@ -1387,7 +1387,8 @@ i.bi {
 }
 
 .auth {
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -1401,6 +1402,10 @@ i.bi {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    right: 0;
 }
 
 .auth-image img {
@@ -1417,6 +1422,8 @@ i.bi {
 
 .auth-side .auth-form {
     width: 500px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .auth-side .auth-form h1 {
