@@ -4,6 +4,12 @@ $(document).ready(function () {
     const observer = lozad(); // lazy loads elements with default selector as '.lozad'
     observer.observe();
 
+    jQuery('.toast__close').click(function(e){
+        e.preventDefault();
+        var parent = $(this).parent('.toast');
+        parent.slideUp("slow", function() { $(this).remove(); } );
+    });
+
     if ($('.main-swiper').length != 0) {
         const swiper = new Swiper('.main-swiper', {
             // Optional parameters

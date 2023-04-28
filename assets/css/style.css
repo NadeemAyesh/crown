@@ -2151,11 +2151,13 @@ i.bi {
     top: 50%;
     left: 22px;
     transform: translateY(-50%);
-    width: 14px;
-    height: 14px;
-    padding: 7px;
+    width: 24px;
+    height: 24px;
+    /*padding: 7px;*/
     border-radius: 50%;
     display: inline-block;
+    color: #FFF;
+    text-align: center;
 }
 
 .toast__type {
