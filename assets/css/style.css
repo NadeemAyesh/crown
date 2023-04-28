@@ -410,6 +410,14 @@ i.bi {
     overflow: hidden;
 }
 
+.product-item figure img {
+    transition: all 0.4s ease;
+}
+
+.product-item:hover figure img {
+    transform: scale(1.05, 1.05);
+}
+
 .new {
     position: absolute;
     top: 12px;
@@ -419,6 +427,7 @@ i.bi {
     color: #FFF;
     font-size: 14px;
     background-color: #EB2606;
+    z-index: 2;
 }
 
 .pro-cat {
@@ -441,6 +450,11 @@ i.bi {
     color: #1A1E26;
     margin-top: 8px;
     margin-bottom: 8px;
+    transition: all 0.4s ease;
+}
+
+.product-item:hover h3 {
+    color: var(--main-color);
 }
 
 .product-item .review {
@@ -494,6 +508,7 @@ i.bi {
     font-size: 14px;
     color: #FFF;
     padding: 12px 25px;
+    z-index: 2;
 }
 
 /* out-of-stock */
