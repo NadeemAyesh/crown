@@ -25,6 +25,14 @@ html * {
     --trans: all 0.4s ease-in-out;
     --font-14: 14px;
     --font-16: 16px;
+
+    --primary-c: #2196F3;
+    --secondary-c: #B2D7F5;
+
+    --white: #FDFBFB;
+
+    --text: #082943;
+    --bg: var(--primary-c);
 }
 
 body {
@@ -2107,7 +2115,7 @@ i.bi {
     display: table-cell;
     vertical-align: middle;
     position: fixed;
-    bottom: 20px;
+    top: 20px;
     right: 20px;
     z-index: 9;
 }
@@ -2215,3 +2223,168 @@ i.bi {
 }
 
 /*toast*/
+
+.normal-radios {
+    --background: #ffffff;
+    --text: #414856;
+    --radio: #7C96B2;
+    --radio-checked: #4F29F0;
+    --radio-size: 20px;
+    --width: 100px;
+    --height: 140px;
+    --border-radius: 10px;
+    color: var(--text);
+    position: relative;
+    align-items: center;
+}
+.normal-radios label {
+    cursor: pointer;
+}
+.normal-radios input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    height: var(--radio-size);
+    width: var(--radio-size);
+    outline: none;
+    margin: 0;
+    cursor: pointer;
+    border: 2px solid var(--radio);
+    background: transparent;
+    border-radius: 50%;
+    display: grid;
+    justify-self: end;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    transition: border 0.5s ease;
+}
+.normal-radios input[type=radio]::before, form input[type=radio]::after {
+    content: "";
+    display: flex;
+    justify-self: center;
+    border-radius: 50%;
+}
+.normal-radios input[type=radio]::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+    z-index: 1;
+    opacity: var(--opacity, 1);
+}
+.normal-radios input[type=radio]::after {
+    position: relative;
+    width: calc(100% /2);
+    height: calc(100% /2);
+    background: var(--radio-checked);
+    top: var(--y, 100%);
+    transition: top 0.5s cubic-bezier(0.48, 1.97, 0.5, 0.63);
+}
+.normal-radios input[type=radio]:checked {
+    --radio: var(--radio-checked);
+}
+.normal-radios input[type=radio]:checked::after {
+    --y: 0%;
+    -webkit-animation: stretch-animate 0.3s ease-out 0.17s;
+    animation: stretch-animate 0.3s ease-out 0.17s;
+}
+.normal-radios input[type=radio]:checked::before {
+    --opacity: 0;
+}
+.normal-radios input[type=radio]:checked ~ input[type=radio]::after {
+    --y: -100%;
+}
+.normal-radios input[type=radio]:not(:checked)::before {
+    --opacity: 1;
+    transition: opacity 0s linear 0.5s;
+}
+
+@-webkit-keyframes stretch-animate {
+    0% {
+        transform: scale(1, 1);
+    }
+    28% {
+        transform: scale(1.15, 0.85);
+    }
+    50% {
+        transform: scale(0.9, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes stretch-animate {
+    0% {
+        transform: scale(1, 1);
+    }
+    28% {
+        transform: scale(1.15, 0.85);
+    }
+    50% {
+        transform: scale(0.9, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.add-cupon {
+    padding: 12px;
+    background-color: #F4f4f4;
+    border-radius: 4px;
+    border: 1px solid #e3e3e3;
+}
+
+.add-cupon p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #3e3e3e;
+}
+
+.add-cupon p strong {
+    color: #212121;
+    font-size: 16px;
+    display: inline-block;
+    margin-inline-start: 12px;
+}
+
+.contact_information_list li {
+    display: flex;
+    padding: 25px 0;
+    align-items: center;
+}
+
+.contact_information_list .item_icon {
+    width: 60px;
+    height: 60px;
+    color: var(--main-color);
+    font-size: 24px;
+    line-height: 60px;
+    text-align: center;
+    margin-inline-end: 20px;
+    border-radius: 100%;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.contact_information_list li:hover .item_icon {
+    background-color: var(--main-color);
+    color: #FFF;
+}
+
+.contact_information_list h4 {
+    line-height: 1;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.contact_information_list p {
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.contact_information_list p a {
+    color: #212121;
+}
