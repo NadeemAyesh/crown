@@ -178,4 +178,21 @@ $(document).ready(function () {
         $('.js-example-basic-single').select2();
     }
 
+    $('.upload-file-user input').on('change', function(evt) {
+        console.log(evt.target.files)
+        readURL(this)
+    });
+
 });
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            $('.upload-file-user img').attr('src', e.target.result);
+            $('.upload-file-user img').hide();
+            $('.upload-file-user img').fadeIn(650);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
