@@ -178,6 +178,61 @@
         </div>
     </aside>
 
+    <aside class="offcanvas offcanvas-end" tabindex="-1" id="SmallMenu" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header shadow-sm">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel1">Main Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form class="d-flex mx-auto search-header border-bottom pb-2" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+            <ul class="list-unstyled">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item mt-2">
+                    <a class="nav-link position-relative" href="">
+                        <i class="bi bi-cart3" style="font-size: 26px;"></i>
+                        Cart <small>(35)</small>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="offcanvas-footer border-top pt-2">
+            <ul class="list-unstyled">
+                <li class="nav-item px-3 py-1">
+                    <a class="btn btn-outlined w-100" href="#">Register</a>
+                </li>
+                <li class="nav-item px-3 py-1">
+                    <a class="btn btn-crown  w-100" href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
     <!-- main header -->
     <header class="main-header box-shadow mb-5">
         <section class="top-bar">
@@ -231,9 +286,7 @@
                 <a class="navbar-brand" href="#" title="">
                     <img src="assets/images/logo.png" alt="" title="" />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-target="#SmallMenu" data-bs-toggle="offcanvas">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -277,7 +330,7 @@
             </div>
         </nav>
         <hr class="mt-0" style="border-top: 1px solid #F4F4F4;">
-        <div class="container">
+        <div class="container nav-contain">
             <ul class="nav nav-underline">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -1074,7 +1127,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4">
+                <div class="col-lg-2 col-md-3">
                     <h4>Footer List</h4>
                     <ul class="p-0 m-0 list-unstyled footer-list">
                         <li><a href="">Track Your Order</a></li>
@@ -1096,8 +1149,8 @@
                         <li><a href="">Refunds</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-12 ms-auto">
-                    <h4>CONTACT US</h4>
+                <div class="col-lg-3 col-md-5 ms-auto">
+                    <h4>CONTACT US</h4>5
 
                     <ul class="p-0 m-0 list-unstyled footer-list">
                         <li><a href="mailto: info@topshelfbc.cc"><i class="bi bi-envelope"></i> info@topshelfbc.cc</a>
@@ -1123,10 +1176,10 @@
             </div>
             <hr style="border-color: #686868;">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <p class="mb-0">© 2022 Top Shelf BC. All Rights Reserved. </p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <ul class="p-0 m-0 list-unstyled footer-list nav justify-content-end">
                         <li><a href="" class="mb-0">Track Your Order</a></li>
                         <li><a href="" class="mb-0">Shop All</a></li>

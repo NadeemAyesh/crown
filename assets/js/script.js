@@ -183,6 +183,11 @@ $(document).ready(function () {
         readURL(this)
     });
 
+    $('.open-filters').on('click', function (e) {
+        e.preventDefault();
+        $('.filter-side').toggleClass('show');
+    })
+
 });
 
 function readURL(input) {

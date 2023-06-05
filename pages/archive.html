@@ -299,64 +299,69 @@
                     <div class="col-lg-3">
                         <aside class="filter-side">
                             <form class="form">
-                                <h4><i class="bi bi-filter"></i> Filters</h4>
-                                <hr>
-                                <span class="sub-title">PRODUCT CATEGORY</span>
-                                <ul class="list-unstyled p-0 m-0 check-list">
-                                    <li>
-                                        <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox"
-                                            value="value1">
-                                        <label for="styled-checkbox-1">Checkbox</label>
-                                    </li>
-                                    <li>
-                                        <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox"
-                                            value="value2" checked>
-                                        <label for="styled-checkbox-2">CSS Only</label>
-                                    </li>
-                                    <li>
-                                        <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox"
-                                            value="value3" disabled>
-                                        <label for="styled-checkbox-3">A disabled checkbox</label>
-                                    </li>
-                                    <li>
-                                        <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox"
-                                            value="value4">
-                                        <label for="styled-checkbox-4">Fourth option</label>
-                                    </li>
-                                </ul>
-                                <hr>
-                                <span class="sub-title">FILTER BY PRICE</span>
-                                <div class="form-group slider-group">
-                                    <label>Price</label>
-                                    <div id="formatting-slider" class="slider-styled"></div>
-                                    <div class="d-flex justify-content-between mt-1">
-                                        <div id="formatting-start"></div>
-                                        <div id="formatting-end"></div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4><i class="bi bi-filter"></i> Filters</h4>
+                                    <a href="javascript: void(0);" class="btn btn-crown open-filters h-auto">Open Filters</a>
+                                </div>
+                                <div class="side-body">
+                                    <hr>
+                                    <span class="sub-title">PRODUCT CATEGORY</span>
+                                    <ul class="list-unstyled p-0 m-0 check-list">
+                                        <li>
+                                            <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox"
+                                                   value="value1">
+                                            <label for="styled-checkbox-1">Checkbox</label>
+                                        </li>
+                                        <li>
+                                            <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox"
+                                                   value="value2" checked>
+                                            <label for="styled-checkbox-2">CSS Only</label>
+                                        </li>
+                                        <li>
+                                            <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox"
+                                                   value="value3" disabled>
+                                            <label for="styled-checkbox-3">A disabled checkbox</label>
+                                        </li>
+                                        <li>
+                                            <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox"
+                                                   value="value4">
+                                            <label for="styled-checkbox-4">Fourth option</label>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <span class="sub-title">FILTER BY PRICE</span>
+                                    <div class="form-group slider-group">
+                                        <label>Price</label>
+                                        <div id="formatting-slider" class="slider-styled"></div>
+                                        <div class="d-flex justify-content-between mt-1">
+                                            <div id="formatting-start"></div>
+                                            <div id="formatting-end"></div>
+                                        </div>
                                     </div>
+                                    <hr>
+                                    <span class="sub-title">Order By</span>
+                                    <div class="form-group mb-3">
+                                        <label for="">Sorting</label>
+                                        <select class="form-select" name="">
+                                            <option value="">Heighest Price</option>
+                                            <option value="">Lowest Price</option>
+                                            <option value="">By name ASEC</option>
+                                            <option value="">By name DESC</option>
+                                        </select>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group mb-3">
+                                        <label class="d-block">Rate</label>
+                                        <fieldset class="rating">
+                                            <input type="radio" id="star5" name="rating" value="5"><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                            <input type="radio" id="star4" name="rating" value="4"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                            <input type="radio" id="star3" name="rating" value="3"><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                            <input type="radio" id="star2" name="rating" value="2"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                            <input type="radio" id="star1" name="rating" value="1"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                        </fieldset>
+                                    </div>
+                                    <button type="submit" name="" class="btn btn-crown w-100">Filter</button>
                                 </div>
-                                <hr>
-                                <span class="sub-title">Order By</span>
-                                <div class="form-group mb-3">
-                                    <label for="">Sorting</label>
-                                    <select class="form-select" name="">
-                                        <option value="">Heighest Price</option>
-                                        <option value="">Lowest Price</option>
-                                        <option value="">By name ASEC</option>
-                                        <option value="">By name DESC</option>
-                                    </select>
-                                </div>
-                                <hr>
-                                <div class="form-group mb-3">
-									<label class="d-block">Rate</label>
-									<fieldset class="rating">
-										<input type="radio" id="star5" name="rating" value="5"><label class="full" for="star5" title="Awesome - 5 stars"></label>
-										<input type="radio" id="star4" name="rating" value="4"><label class="full" for="star4" title="Pretty good - 4 stars"></label>
-										<input type="radio" id="star3" name="rating" value="3"><label class="full" for="star3" title="Meh - 3 stars"></label>
-										<input type="radio" id="star2" name="rating" value="2"><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-										<input type="radio" id="star1" name="rating" value="1"><label class="full" for="star1" title="Sucks big time - 1 star"></label>
-									</fieldset>
-								</div>
-                                <button type="submit" name="" class="btn btn-crown w-100">Filter</button>
                             </form>
                         </aside>
                     </div>

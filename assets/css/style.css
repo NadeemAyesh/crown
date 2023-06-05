@@ -206,7 +206,8 @@ i.bi {
 
 /* navlink */
 .navbar-nav .nav-link,
-.nav-underline .nav-link {
+.nav-underline .nav-link,
+.offcanvas-body .nav-link {
     padding: 6px 15px;
     color: #333;
     font-size: 16px;
@@ -274,6 +275,14 @@ i.bi {
     color: #FFF;
 }
 
+.offcanvas-body .search-header input[type=search] {
+    width: auto;
+    flex-grow: 1;
+}
+
+.offcanvas-body .search-header button {
+    flex-shrink: 0;
+}
 /* search-header */
 
 /* main-slider */
@@ -2466,3 +2475,162 @@ i.bi {
     font-weight: 500;
 }
 /*preif*/
+
+.filter-side .side-body {
+    transition: max-height 0.34s;
+    overflow-x: hidden;
+}
+
+.filter-side.show .side-body {
+    max-height: 100000px;
+    transition: max-height 0.34s;
+    overflow-x: hidden;
+}
+
+@media(max-width: 991px) {
+    .nav-contain {
+        display: none;
+    }
+
+    .top-nav:not(.social-nav) {
+        display: none;
+    }
+
+    .social-nav {
+        justify-content: center;
+    }
+
+    .product-item {
+        margin-bottom: 25px;
+    }
+
+    .filter-side .side-body {
+        max-height: 0;
+    }
+
+    .white-bg-box,
+    .user-side {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-img {
+        height: auto;
+    }
+
+    .slider-text h1 {
+        font-size: 28px;
+    }
+
+    .slider-text p {
+        line-height: 21px;
+    }
+
+    .category-item h3 {
+        font-size: 16px;
+    }
+
+    .sec-title h4 {
+        font-size: 20px;
+    }
+
+    .category-item {
+        padding: 16px;
+    }
+
+    .sec-title .d-flex {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .sec-title #pills-tab {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .title-actions {
+        width: 100%;
+    }
+
+    .banner-big-wrap {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+
+    .banner-big-wrap h3 {
+        font-size: 24px;
+    }
+
+    .banner-big-wrap span.cat {
+        font-size: 12px;
+    }
+
+    .banner-big-wrap figure {
+        height: 250px;
+        margin-top: 18px;
+    }
+
+    .feat-item figure {
+        width: 65px;
+        height: 65px;
+    }
+
+    .feat-item h4 {
+        font-size: 20px;
+        line-height: 130%;
+        margin-bottom: 10px;
+    }
+
+    .feat-item p {
+        font-size: 13px;
+    }
+
+    .big-offer h2 {
+        font-size: 38px;
+    }
+
+    .big-offer {
+        padding: 60px 28px;
+    }
+
+    .footer-list {
+        justify-content: center !important;
+    }
+
+    .main-footer p {
+        text-align: center;
+    }
+
+    .footer-item p {
+        text-align: start;
+    }
+
+    .course-item-vertical picture {
+        width: 190px;
+        height: 200px;
+    }
+
+    .course-item h2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .toolbar h1 {
+        font-size: 20px;
+    }
+
+    .preif > .d-flex {
+        flex-direction: column;
+    }
+
+    .preif > .d-flex > div {
+        margin-bottom: 5px;
+    }
+}
+
+@media(max-width: 480px) {
+    .course-item > .d-flex {
+        flex-direction: column;
+    }
+}
